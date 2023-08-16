@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="search">
+            <input type="text" name="search" id="" class="searchInput" placeholder="Search the City.." spellcheck="false">
+            <button class="searchBtn">
+                <img src="./images/search.png" alt="">
+            </button>
+        </div>
+
+        <!-- loading -->
+
+        <div class="loadingContainer">
+            <img src="./images/loading.gif" alt="" class=".loading" width="150" height="150">
+            <p>Loading</p>
+        </div>
+
+        
+
+        <!-- error message -->
+
+        <div class="err">
+            <p>Invalid City Name</p>
+        </div>
+
+
+        <div class="weather">
+            <img src="./images/rain.png" class="weather-icon" alt="">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Delhi</h2>
+            <h3 class="desc"> 
+                <!-- <pre><i class="fa-solid fa-cloud-rain fa-bounce fa-sm"></i>   Heavy Intensity Rain</pre> -->
+                
+             </h3>
+            <div class="details">
+
+                <div class="col">
+                    <img src="./images/humidity.png" class="humidity_pic" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="./images/wind.png" class="wind_pic" alt="">
+                    <div>
+                        <p class="wind">Wind Speed</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+                <!-- <div class="precp">
+                    <img src="./images/wind.png" class="wind_pic" alt="">
+                    <div>
+                        <p class="wind">Wind Speed</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div> -->
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5f0cfad6e5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
